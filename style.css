@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar::before{
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li{
+  font-size: 1.1rem;
+}
+
+.navbar ul li a{
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li a:hover{
+  color:lemonchiffon;
+}
+
+/* Home Section */
+#home{
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('img/image1.jpg') no-repeat center center/cover;
+  height: 700px;
+  width: 100%;
+  z-index: -1;
+  opacity: .8;
+}
+
+.heading{
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Education Section */
+#education{
+  display: flex;
+  flex-direction: column;
+}
+
+#education h1{
+  margin: 60px;
+  color: black;
+}
+
+.columns{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 50px;
+}
+
+.box{
+  height: 200px;
+  width: 500px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.box h2{
+  font-size: 2rem;
+  margin-bottom: 40px;
+
+}
+
+/* About section */
+#about{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+#about h1{
+  margin: 55px;
+}
+
+.about{
+  display: flex;
+}
+
+.about img{
+  width: auto;
+  height: 400px;
+  padding: 0px 30px;
+}
+
+.name{
+  padding: 10px;
+}
+
+.name h2{
+  font-size: 2rem;
+}
+
+.name p{
+  font-size: 1rem;
+}
+
+/* Contact section */
+#contact{
+  display: flex;
+  flex-direction: column;
+  background-color:gray;
+}
+
+#contact h1{
+  margin: 50px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input{
+  padding: 15px 20px;
+  margin: 15px;
+  width: 40%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+#message{
+  margin: 15px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#submit{
+  padding: 15px 20px;
+  margin: 30px;
+  width: 15%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+#submit:hover{
+  background-color:lemonchiffon;
+  cursor: pointer;
+}

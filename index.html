@@ -3,25 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-sc ale=1.0">
-  <link rel="stylesheet" href="App/style.css">
-  <title>Portfolio Jordan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Jordan Goedbloed</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
+  <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
+  <link rel="stylesheet" media="sceren and (max-width:390px)" href="phone1.css">
 </head>
 <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <nav>Hier komen navigatie foto's</nav>
+    <section id="home">
+      <h1 class="heading">HELLO, I AM</h1>
+      <h1 class="heading">JORDAN GOEDBLOED</h1>
+      <br><br>
+      <P>AND THIS IS MY PORTFOLIO WEBSITE</P>
+    </section>
 
-  <header>Hier komt een header foto</header>
+    <section id="education">
+      <h1 class="heading">Education</h1>
+      <div class="columns">
+        <div class="box">
+          <h2>MBO 4 Degree in Mediavormgeving Art&Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In mollitia officiis suscipit? Quisquam, exercitationem blanditiis! Dolorem, architecto? Perferendis, cupiditate autem!</p>
+        </div>
+        <div class="box">
+          <h2>3 years of work expierence in Logistics field</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In mollitia officiis suscipit? Quisquam, exercitationem blanditiis! Dolorem, architecto? Perferendis, cupiditate autem!</p>
+        </div>
 
-  <h1>Welkom</h1>
-  <p>Mijn naam is Jordan Goedbloed. <br> Ik ben 24 jaar en studeer Creative media & Game technologies</p>
+      </div>
+    </section>
 
+    <section id="about">
+      <h1 class="heading">About me</h1>
+      <div class="about">
+        <img src="img/jordan.JPG" alt="Picture of Jordan">
+        <div class="name">
+          <h2>JORDAN GOEDBLOED</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, nulla laudantium. Quas rem ipsa illo accusamus aut eaque fuga repellendus odit nobis accusantium vitae voluptas, id error optio ut eum! Ea totam dicta tenetur quae cumque, veniam illum suscipit, officia atque ducimus alias dolorem blanditiis nesciunt odit fugit, assumenda eum?</p>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <p>About</p>
-  <p>Contact</p>
-  <p>Instagram</p>
-</footer>
-
+    <section id="contact">
+      <h1 class="heading">Contact</h1>
+      <form action="" class="form">
+        <input type="text" name="" class="input" placeholder="Enter your name">
+        <input type="email" name="email" class="input" placeholder="Enter your email">
+        <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter your message"></textarea>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </section>
 </body>
 </html>

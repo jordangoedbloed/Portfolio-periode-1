@@ -1,0 +1,31 @@
+.navbar{
+
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.columns{
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.box{
+  height: 200px;
+  width: 500px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.box h2{
+  font-size: 2rem;
+  margin-bottom: 40px;
+
+}
